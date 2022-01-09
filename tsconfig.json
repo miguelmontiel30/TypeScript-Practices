@@ -1,0 +1,18 @@
+{
+  "extends": "./configs/base", // para importar configuraciones de otro archivo
+  "compileOnSave": true, // para indicar al ide o editor que cada vez que se produscan cambios se compile automaticamente
+  "compilerOptions": {
+    "target": "es6", //VERSION DE LA QUE COMPILARA
+    "module": "commonjs",
+    "strict": true, //PARA PERMITIR MODO ESTRICTO EN TIPADO DE CODIGO
+    "removeComments": true, //ELIMINA LOS COMENTARIOS DEL ARCHIVO COMPILADO
+    "outDir": "./dist"
+  },
+  "include": [ // para incluir directorios o subdirectorios
+    "src/**/*.ts"
+  ],
+  "exclude": [ // para excluir directorios o subdirectorios
+    "node_modules",
+    "**/*.test.ts"
+  ]
+}
