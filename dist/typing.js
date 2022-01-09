@@ -18,6 +18,7 @@ myFunction();
 const myNeverFunction = () => {
     let m_never_function_var;
 };
+myNeverFunction();
 let my_undefined_var;
 console.log('my-undefined:', my_undefined_var);
 let my_null_var;
@@ -32,7 +33,6 @@ user_properties = {
 };
 const isObjectInstance = user_properties instanceof Object;
 console.log('isInstance : ', isObjectInstance);
-console.log('my_object:', user_properties.firstName);
 let new_user_properties = {
     firstName,
     last_name,
@@ -100,7 +100,7 @@ let idUser_2;
 idUser_2 = 10;
 idUser_2 = '10';
 function getUsernameById_2(id) {
-    return 'luixaviles';
+    return 'mike';
 }
 getUsernameById_2(20);
 getUsernameById_2('20');
@@ -112,7 +112,7 @@ console.log('asercion de tipo', my_name.toUpperCase());
 const my_favorite_number = '15';
 const sum = (my_favorite_number_pharam, optional_value) => {
     const number_1 = 10;
-    console.log(optional_value);
+    console.log('optional_value: ', optional_value);
     return number_1 + parseInt(my_favorite_number_pharam);
 };
 console.log('my function :', sum(my_favorite_number, 'parametro opcional'));

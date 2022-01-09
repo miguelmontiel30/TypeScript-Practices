@@ -37,9 +37,10 @@ myFunction();
 const myNeverFunction = (): never => {
     let m_never_function_var: never;
 }
+myNeverFunction();
 
 
-//type undefined & null 
+//type undefined & null
 // ********* undefined ********* //
 let my_undefined_var: undefined;
 console.log('my-undefined:', my_undefined_var);
@@ -62,7 +63,7 @@ user_properties = {
 }
 const isObjectInstance = user_properties instanceof Object; // trueo o false
 console.log('isInstance : ', isObjectInstance);
-console.log('my_object:', user_properties.firstName);
+// console.log('my_object:', user_properties.firstName);
 
 // ---- Object -- It´s an instance and can be used to create real objects
 let new_user_properties = {
@@ -182,7 +183,7 @@ idUser_2 = '10';
 // Buscar username dado un ID
 function getUsernameById_2(id: IdUser): Username {
     // logica de negocio, find the user
-    return 'luixaviles';
+    return 'mike';
 }
 getUsernameById_2(20);
 getUsernameById_2('20');
@@ -206,7 +207,7 @@ console.log('asercion de tipo', (my_name as string).toUpperCase());
 const my_favorite_number: any = '15';
 const sum = (my_favorite_number_pharam: number, optional_value?: string): number => {
     const number_1: number = 10;
-    console.log(optional_value);
+    console.log('optional_value: ', optional_value);
     return number_1 + parseInt(my_favorite_number_pharam);
 }
 console.log('my function :', sum(my_favorite_number as number, 'parametro opcional'));
